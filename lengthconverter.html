@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Convert from cm to inches</h1>
+    <div>
+      <input
+        type="text"
+        name="number"
+        id="number"
+        placeholder="give num in cm"
+      />
+    </div>
+    <div>
+      <button type="button" id="btn" onclick="convert()">Converter</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+      function convert() {
+        const a = Number(document.getElementById("number").value);
+        const b = a / 2.54;
+        const s = document.getElementById("result");
+        s.innerHTML = b.toFixed(2) + " inches";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.num {
+  color: rgb(225, 5, 5);
+}
+body {
+  background-color: cornflowerblue;
+}
+.dev {
+  background-position: 2px;
+  box-sizing: border-box;
+
+  background-color: crimson;
+  color: blue;
+}

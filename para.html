@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>para</title>
+  </head>
+  <body>
+    <textarea name="para" id="para" cols="30" rows="10">
+Git is a free and open-source distributed version.</textarea
+    >
+    <button type="button" onclick="cal()">Calculate</button>
+    <p id="show"></p>
+    <p id="show1"></p>
+    <script>
+      function cal() {
+        let a = document.getElementById("para").value;
+        console.log(a);
+        let s = a.split(/[\s-]+/);
+        document.getElementById("show").innerHTML = a;
+
+        let count = s.length;
+        console.log(count);
+        document.getElementById("show1").innerHTML = count;
+      }
+
+      //   function cal() {
+      //     let arr = para;
+      //     console.log(arr);
+      //   }
+    </script>
+  </body>
+</html>
